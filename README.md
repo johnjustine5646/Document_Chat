@@ -38,7 +38,8 @@ The app has some main parts that do different jobs:
 +--------------------------+  
 |  Groq AI and TinyLlama   |  
 |   (Generates responses)  |  
-+--------------------------+  
++--------------------------+
+```
 
 ## What Each Part Does
 1. User Interface:
