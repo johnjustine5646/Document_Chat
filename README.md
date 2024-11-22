@@ -44,20 +44,19 @@ The app has some main parts that do different jobs:
 ## What Each Part Does
 1. User Interface:
 
- - This is the main page where you upload PDFs and type your questions.
- - It uses Streamlit (a library for Python).
+  - This is the main page where you upload PDFs and type your questions.
+  - It uses Streamlit (a library for Python).
 2. PDF Text Extraction:
 
-- Reads text from PDFs with PyMuPDF. If it doesn’t work, it tries OCR with Pytesseract.
+ - Reads text from PDFs with PyMuPDF. If it doesn’t work, it tries OCR with Pytesseract.
 Don’t forget to install Tesseract separately, or it won’t work!
 3. Embedding Generation:
 
-- Converts the PDF text into embeddings with SentenceTransformer. These embeddings are just numbers that represent the text.
-It's hard to explain what embeddings are, but they make finding similar stuff easier.
+ - Converts the PDF text into embeddings with SentenceTransformer. These embeddings are just numbers that represent the text.
 4. FAISS Index:
 
- - Stores embeddings in something like a "vector database" so the app can quickly find the best match for your questions.
+ - Stores embeddings in  "vector database" so the app can quickly find the best match for your questions.
 5. Groq AI and TinyLlama Models:
 
-- Groq is a chatbot API (like ChatGPT but not).
-- TinyLlama is a language model for responses, but we made it even better by fine-tuning it.
+ - Groq is a chatbot API (like ChatGPT but not).
+ - TinyLlama is a language model for responses, but we made it even better by fine-tuning it.
